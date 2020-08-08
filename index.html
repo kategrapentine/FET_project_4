@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <br>
+    <div class="card bg-light">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" class="form-control" id="first-name" placeholder="First Name">
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter Email">
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+                <label for="meal-preference">Meal Preference</label>
+                <select class="form-control" id="meal-preference">
+                  <option selected disabled>Choose...</option>
+                  <option>Steak</option>
+                  <option>Chicken</option>
+                  <option>Seafood</option>
+                  <option>Vegetarian</option>
+                  <option>Vegan</option>
+                </select>
+            </div>
+          </div>
+        </div>
+        <div>
+            <button id="add" class="btn btn-primary form control">Create RSVP</button>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="container-fluid bg-light">
+      <h1>Dinner Party RSVP List:</h1>
+      <table id="list" class="table table-secondary table-striped">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Meal Preference</th>
+            <th>RSVP Date</th>
+            <th>Actions</th>
+        </tr>
+      </table>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
